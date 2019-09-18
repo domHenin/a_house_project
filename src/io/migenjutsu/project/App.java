@@ -1,5 +1,7 @@
 package io.migenjutsu.project;
 
+import java.util.HashMap;
+
 public class App {
     public static void main(String[] args) {
 
@@ -14,7 +16,9 @@ public class App {
         System.out.println(owner.toString());
         System.out.println(tenant.toString());
 
+        System.out.println();
 
+//ARRAY ATTEMPT:
         int ages;
 
         for (int i=0; i<house.getPeopleLivingAge().length; i++) {
@@ -33,13 +37,16 @@ public class App {
             System.out.println("Tenants name: "+names);
         }
 
-//        for (s : names) {
-//            System.out.println(names);
-//        }
+        System.out.println();
+
+//HASHMAP ATTEMPT:
+        HashMap<Integer, String> newHashMap = house.getHashMap();
+
+        System.out.println(newHashMap);
     }
 }
 //TODO:
-// iterate through the array to print all
+// create a hashMap<> for String&int of tenant
 
 //CODE GRAVEYARD::
 // ***    CALL ARRAY ATTEMPT ***

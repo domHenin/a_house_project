@@ -1,5 +1,7 @@
 package io.migenjutsu.project;
 
+import java.util.HashMap;
+
 public class House {
     private int squareFeet;
     private int houseNumber;
@@ -10,7 +12,9 @@ public class House {
     private String propManager;
 
     private int[] peopleLivingAge = { 30, 28, 7 };
-    private String[] peopleLivingName = { "Sasuke", "Sakura", "Sarada" };
+    private String[] peopleLivingName = { "James Rogers", "Jane Rogers", "Cindy Rogers" };
+
+    private HashMap<Integer, String> hashMap = new HashMap<>();
 
 //CONSTRUCTOR:
     public House(int squareFeet, int houseNumber, int numberRooms, double costOfHouse, double costToRent, String streetName, String propManager) {
@@ -21,6 +25,10 @@ public class House {
         setCostToRent(costToRent);
         setStreetName(streetName);
         setPropManager(propManager);
+
+        hashMap.put(1, "James Rogers");
+        hashMap.put(2, "Jane Rogers");
+        hashMap.put(3, "Cindy Rogers");
     }
 
 //SETTERS:
@@ -44,6 +52,10 @@ public class House {
     public String getPropManager() { return propManager; }
     public int[] getPeopleLivingAge() { return peopleLivingAge.clone(); }
     public String[] getPeopleLivingName() { return peopleLivingName.clone(); }
+
+    public HashMap<Integer, String> getHashMap() {
+        return hashMap;
+    }
 
 //toString:
     @Override
