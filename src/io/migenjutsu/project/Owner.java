@@ -5,7 +5,7 @@ public class Owner {
     private int yearsOwn;
     private int numberOfHousesOwned;
     private double mortgage;
-//    private double
+
 
 //CONSTRUCTOR:
     public Owner(String name, int yearsOwn, int numberOfHousesOwned, double mortgage) {

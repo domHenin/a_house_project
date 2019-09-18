@@ -7,7 +7,8 @@ public class App {
 
         House house = new House(14250,207, 4, 250000, 1300, "Marigold", "Don");
         Owner owner = new Owner("John Doe", 10, 3, 1030);
-        Tenant tenant = new Tenant("James Rogers", 3, 1);
+        Tenant tenant = new Tenant("James Rogers");
+        YearlyIncome yearlyIncome = new YearlyIncome("James Rogers", 2000);
 
         System.out.println();
 
@@ -43,10 +44,16 @@ public class App {
         HashMap<Integer, String> newHashMap = house.getHashMap();
 
         System.out.println(newHashMap);
+
+        System.out.println();
+
+//YearlyIncome()
+        System.out.println(yearlyIncome.toString());;
+
     }
 }
 //TODO:
-// create a hashMap<> for String&int of tenant
+// start thinking of objects that can inherit from created objects
 
 //CODE GRAVEYARD::
 // ***    CALL ARRAY ATTEMPT ***
