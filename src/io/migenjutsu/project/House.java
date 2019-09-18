@@ -10,6 +10,7 @@ public class House {
     private String propManager;
 
     private int[] peopleLivingAge = { 30, 28, 7 };
+    private String[] peopleLivingName = { "Sasuke", "Sakura", "Sarada" };
 
 //CONSTRUCTOR:
     public House(int squareFeet, int houseNumber, int numberRooms, double costOfHouse, double costToRent, String streetName, String propManager) {
@@ -30,14 +31,8 @@ public class House {
     public void setCostToRent(double costToRent) { this.costToRent=costToRent; }
     public void setStreetName(String streetName) { this.streetName=streetName; }
     public void setPropManager(String propManager) { this.propManager=propManager; }
+//  public void setPeopleLivingAge(int[] peopleLiving) { this.peopleLivingAge = peopleLivingAge; }
 
-//    public void setPeopleLivingAge(int[] peopleLiving) {
-//        this.peopleLivingAge = peopleLivingAge;
-//    }
-
-    public int[] getPeopleLivingAge() {
-        return peopleLivingAge.clone();
-    }
 
 //GETTERS:
     public int getSquareFeet() { return squareFeet; }
@@ -47,6 +42,8 @@ public class House {
     public double getCostToRent() { return costToRent; }
     public String getStreetName() { return streetName; }
     public String getPropManager() { return propManager; }
+    public int[] getPeopleLivingAge() { return peopleLivingAge.clone(); }
+    public String[] getPeopleLivingName() { return peopleLivingName.clone(); }
 
 //toString:
     @Override

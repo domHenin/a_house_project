@@ -14,17 +14,28 @@ public class App {
         System.out.println(owner.toString());
         System.out.println(tenant.toString());
 
-        int a;
+
+        int ages;
 
         for (int i=0; i<house.getPeopleLivingAge().length; i++) {
+            ages=house.getPeopleLivingAge()[i];
 
+            System.out.println("Tenants age: "+ages);
         }
 
-        a= house.getPeopleLivingAge()[0];
-        a=house.getPeopleLivingAge()[1];
-        a=house.getPeopleLivingAge()[2];
+        System.out.println();
 
-        System.out.println(a);
+        String names;
+
+        for (int i=0; i<house.getPeopleLivingName().length; i++) {
+            names=house.getPeopleLivingName()[i];
+
+            System.out.println("Tenants name: "+names);
+        }
+
+//        for (s : names) {
+//            System.out.println(names);
+//        }
     }
 }
 //TODO:
