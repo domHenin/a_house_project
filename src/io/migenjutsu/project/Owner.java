@@ -7,8 +7,12 @@ public class Owner {
     private double mortgage;
 //    private double
 
+//CONSTRUCTOR:
     public Owner(String name, int yearsOwn, int numberOfHousesOwned, double mortgage) {
-
+        setName(name);
+        setYearsOwn(yearsOwn);
+        setNumberOfHousesOwned(numberOfHousesOwned);
+        setMortgage(mortgage);
     }
 
 //SETTERS:

@@ -5,6 +5,7 @@ public class Tenant {
     private int numberInFamily;
     private int contractLength;
 
+//CONSTRUCTOR:
     public Tenant(String name, int numberInFamily, int contractLength) {
         setName(name);
         setNumberInFamily(numberInFamily);
